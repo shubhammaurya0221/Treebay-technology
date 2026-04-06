@@ -47,7 +47,7 @@ export default function Process() {
 
   return (
     // Full screen width, hidden overflow for the slider
-    <section className="py-32 overflow-hidden w-full bg-[#050905] min-h-[90vh] flex flex-col justify-center border-y border-white/5 relative">
+    <section className="py-32 overflow-hidden w-full bg-[var(--color-bg-deep)] min-h-[90vh] flex flex-col justify-center border-y border-[var(--color-border)] relative">
       
       {/* --- INLINE CSS FOR THE INFINITE SLIDER --- */}
       <style>{`
@@ -69,17 +69,17 @@ export default function Process() {
       {/* Header Section */}
       <div className="text-center mb-20 max-w-[90rem] mx-auto px-8 w-full relative z-10">
         <div className="inline-flex items-center gap-4 mb-6">
-          <div className="w-8 h-[1px] bg-[#c29a4b]"></div>
-          <span className="text-[#c29a4b] text-[10px] font-bold tracking-[0.2em] uppercase">
+          <div className="w-8 h-[1px] bg-[var(--color-secondary)]"></div>
+          <span className="text-[var(--color-secondary)] text-[10px] font-bold tracking-[0.2em] uppercase">
             Process Engineering
           </span>
-          <div className="w-8 h-[1px] bg-[#c29a4b]"></div>
+          <div className="w-8 h-[1px] bg-[var(--color-secondary)]"></div>
         </div>
         
-        <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] text-white leading-tight mb-6">
+        <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] text-[var(--color-text)] leading-tight mb-6">
           Ethanol Production Process
         </h2>
-        <p className="text-gray-400 text-sm md:text-base font-light max-w-2xl mx-auto">
+        <p className="text-[var(--color-muted)] text-sm md:text-base font-light max-w-2xl mx-auto">
           Hover over any stage to pause and explore the technical workflow. From raw feedstock to 99.8% pure, fuel-grade absolute alcohol.
         </p>
       </div>
@@ -88,8 +88,8 @@ export default function Process() {
       <div className="relative w-full flex pause-on-hover mt-4">
         
         {/* Left & Right gradient fades so the cards emerge and disappear smoothly */}
-        <div className="absolute top-0 bottom-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[#050905] to-transparent z-20 pointer-events-none"></div>
-        <div className="absolute top-0 bottom-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[#050905] to-transparent z-20 pointer-events-none"></div>
+        <div className="absolute top-0 bottom-0 left-0 w-16 md:w-32 bg-linear-to-r from-[var(--color-bg-deep)] to-transparent z-20 pointer-events-none"></div>
+        <div className="absolute top-0 bottom-0 right-0 w-16 md:w-32 bg-linear-to-l from-[var(--color-bg-deep)] to-transparent z-20 pointer-events-none"></div>
 
         {/* The Animated Scrolling Track */}
         <div className="flex gap-6 px-3 animate-infinite-scroll">
@@ -97,37 +97,37 @@ export default function Process() {
             <div 
               key={i} 
               // Card Styling & Micro-interactions
-              className="flex-shrink-0 w-[320px] md:w-[400px] h-[380px] bg-[#0c1a10] border border-white/5 rounded-sm p-8 flex flex-col group cursor-pointer hover:-translate-y-3 hover:border-[#c29a4b]/50 hover:bg-[#08120b] hover:shadow-2xl hover:shadow-[#c29a4b]/5 transition-all duration-500 relative overflow-hidden"
+              className="flex-shrink-0 w-[320px] md:w-[400px] h-[380px] bg-[var(--color-bg-alt)] border border-[var(--color-border)] rounded-sm p-8 flex flex-col group cursor-pointer hover:-translate-y-3 hover:border-[var(--color-secondary)]/50 hover:bg-[var(--color-bg-deep)] hover:shadow-2xl hover:shadow-[var(--color-secondary)]/5 transition-all duration-500 relative overflow-hidden"
             >
               {/* Giant Faded Number in the background */}
-              <div className="absolute -top-6 -right-6 text-[120px] font-serif font-bold text-white/5 group-hover:text-white/10 transition-colors duration-500 select-none pointer-events-none">
+              <div className="absolute -top-6 -right-6 text-[120px] font-serif font-bold text-[var(--color-text)]/5 group-hover:text-[var(--color-text)]/10 transition-colors duration-500 select-none pointer-events-none">
                 {flow.step}
               </div>
 
               <div className="relative z-10 flex flex-col h-full">
                 {/* Icon & Step Badge */}
                 <div className="flex items-center justify-between mb-8">
-                  <div className="w-14 h-14 rounded-full bg-[#050905] border border-white/10 flex items-center justify-center text-[#1c6b36] group-hover:text-[#c29a4b] group-hover:scale-110 group-hover:border-[#c29a4b]/50 transition-all duration-500 shadow-xl">
+                  <div className="w-14 h-14 rounded-full bg-[var(--color-bg-deep)] border border-[var(--color-border)] flex items-center justify-center text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] group-hover:scale-110 group-hover:border-[var(--color-secondary)]/50 transition-all duration-500 shadow-xl">
                     {flow.icon}
                   </div>
-                  <span className="text-[#c29a4b] font-mono text-sm tracking-widest">
+                  <span className="text-[var(--color-secondary)] font-mono text-sm tracking-widest">
                     STAGE {flow.step}
                   </span>
                 </div>
                 
                 {/* Text Content */}
-                <h4 className="text-2xl font-serif text-white mb-4 group-hover:text-[#c29a4b] transition-colors duration-300">
+                <h4 className="text-2xl font-serif text-[var(--color-text)] mb-4 group-hover:text-[var(--color-secondary)] transition-colors duration-300">
                   {flow.name}
                 </h4>
                 
-                <p className="text-gray-400 text-sm leading-relaxed mb-8 flex-grow group-hover:text-gray-300 transition-colors">
+                <p className="text-[var(--color-muted)] text-sm leading-relaxed mb-8 flex-grow group-hover:text-[var(--color-text-muted)] transition-colors">
                   {flow.desc}
                 </p>
 
                 {/* Animated Bottom Line / Arrow */}
-                <div className="mt-auto flex items-center justify-between border-t border-white/10 pt-5 overflow-hidden">
-                  <div className="h-[1px] w-0 bg-[#c29a4b] group-hover:w-12 transition-all duration-700 ease-out"></div>
-                  <ArrowRight size={18} className="text-[#c29a4b] opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out" />
+                <div className="mt-auto flex items-center justify-between border-t border-[var(--color-border)] pt-5 overflow-hidden">
+                  <div className="h-[1px] w-0 bg-[var(--color-secondary)] group-hover:w-12 transition-all duration-700 ease-out"></div>
+                  <ArrowRight size={18} className="text-[var(--color-secondary)] opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out" />
                 </div>
               </div>
             </div>

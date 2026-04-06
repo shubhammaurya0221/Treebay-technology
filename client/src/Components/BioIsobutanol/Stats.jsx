@@ -65,10 +65,10 @@ const Counter = ({ end, suffix, duration = 2500, delay = 0 }) => {
 
 export default function Stats() {
   const stats = [
-    { end: 25, suffix: "+", label: "PLANTS COMMISSIONED" },
-    { end: 800, suffix: "+", label: "PROFESSIONALS WORKING" },
-    { end: 15, suffix: "+", label: "STATES COVERED" },
-    { end: 99, suffix: "%", label: "ON-TIME DELIVERY" },
+    { end: 20, suffix: "+", label: "PROJECTS UNDER DEVELOPMENT" },
+    { end: 750, suffix: "+", label: "ENGINEERS & SPECIALISTS" },
+    { end: 12, suffix: "+", label: "STATES SERVED" },
+    { end: 98, suffix: "%", label: "PROCESS EFFICIENCY" },
   ];
 
   return (

@@ -4,17 +4,32 @@ import { ChevronDown} from 'lucide-react';
 export default function FAQ() {
   const [openIdx, setOpenIdx] = useState(0);
   const faqs = [
-    { q: "What types of plants do you specialize in?", a: "We primarily specialize in end-to-end turnkey solutions for green energy infrastructure. This includes large-scale Grain/Molasses based Ethanol Bio-refineries, CBG (Compressed Biogas) / Bio-CNG plants, and sustainable Green Chemical facilities." },
-    { q: "Do you handle both detailed engineering and civil construction?", a: "Yes, our EPC framework covers everything from initial feasibility and detailed engineering to procurement, structural fabrication, civil works, and final commissioning." },
-    { q: "What is your typical project timeline for a 100 KLPD Ethanol plant?", a: "Project timelines vary based on site conditions, but typically range from 12 to 14 months from the signing of the agreement to initial commissioning." },
-    { q: "Do you provide performance guarantees?", a: "Absolutely. We stand by our engineering with strict performance guarantees covering yield, energy consumption (steam/power), and effluent norms (ZLD)." },
-    { q: "Are you involved in environmental clearance processes?", a: "While the client leads the primary application, our technical team provides all necessary designs, P&IDs, mass balance sheets, and technical documentation required to secure fast-track approvals." }
-  ];
+  {
+    q: "What types of bio-iso-butanol plants do you design?",
+    a: "We specialize in turnkey EPC solutions for bio-iso-butanol facilities, including fermentation-based plants using sugar, grain, and lignocellulosic biomass feedstocks, along with integrated purification and downstream processing systems."
+  },
+  {
+    q: "Do you handle both bioprocess engineering and plant construction?",
+    a: "Yes, our EPC framework covers complete bioprocess engineering — from fermentation design and reaction kinetics to detailed engineering, procurement, civil construction, and final commissioning."
+  },
+  {
+    q: "What is the typical project timeline for a bio-iso-butanol plant?",
+    a: "Timelines vary based on capacity and feedstock complexity, but most projects are delivered within 14 to 18 months from project kickoff to commissioning."
+  },
+  {
+    q: "Do you provide performance and yield guarantees?",
+    a: "Absolutely. We offer performance guarantees on conversion efficiency, product purity, energy consumption, and environmental compliance, including Zero Liquid Discharge (ZLD) systems."
+  },
+  {
+    q: "Do you support environmental approvals and compliance?",
+    a: "Yes, our team provides complete technical documentation including process designs, mass balance, emission data, and effluent treatment plans to support environmental clearance and regulatory approvals."
+  }
+];
 
   return (
     <section className="py-24 px-8 max-w-3xl mx-auto border-b border-[var(--color-border)]">
       <div className="text-center mb-12">
-        <h2 className="text-[var(--color-secondary)] text-xs font-semibold tracking-widest uppercase mb-4">Common Inquiries</h2>
+        <h2 className="text-[var(--color-secondary)] text-xs font-semibold tracking-widest uppercase mb-4">Frequently Asked Questions</h2>
         <h3 className="text-4xl font-serif text-[var(--color-text)]">Frequently Asked Questions</h3>
       </div>
       

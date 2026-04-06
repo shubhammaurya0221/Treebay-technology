@@ -13,7 +13,7 @@ export default function Hero() {
         className="absolute inset-0 z-0 bg-cover bg-center opacity-80"
         style={{
           backgroundImage:
-            "url('https://cdn.corporatefinanceinstitute.com/assets/Industry-1024x576.jpeg')",
+            "url('https://www.consultavalon.com/wp-content/uploads/2026/01/Isobutanol-for-Diesel-Blending.png')",
         }}
       />
 
@@ -33,7 +33,7 @@ export default function Hero() {
           >
             <div className="w-12 h-[1px] bg-[var(--color-secondary)]"></div>
             <h2 className="text-[var(--color-secondary)] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">
-              Engineering · Procurement · Construction
+              End-to-End EPC Solutions
             </h2>
           </motion.div>
 
@@ -42,11 +42,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl md:text-7xl lg:text-[5.5rem] font-serif leading-[1.05] mb-6 text-[var(--color-text)]"
+            className="font-serif text-[2.8rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.2rem] leading-[1.1] text-[var(--color-text)] max-w-4xl"
           >
-            Powering India's <br />
-            <span className="italic text-[var(--color-text-muted)]">Green Energy</span> <br />
-            Revolution.
+            Powering India’s <br />
+            <span className="italic text-[var(--color-text-muted)]">
+              Bio-Iso-Butanol
+            </span>{" "}
+            <br />
+            Future.
           </motion.h1>
         </div>
 
@@ -60,7 +63,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-[var(--color-text-muted)] text-base md:text-[17px] mb-10 max-w-[28rem] leading-relaxed"
           >
-            Turnkey EPC solutions for Ethanol Distilleries, Bio-CNG Plants, and Green Chemical Facilities — from process design to final commissioning.
+            Turnkey EPC solutions for next-generation bio-iso-butanol plants — enabling high-value fuel and chemical production from sustainable feedstocks.
           </motion.p>
 
           {/* CTA + badges */}
@@ -70,7 +73,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-wrap items-center gap-6 xl:gap-10"
           >
-            
+
             {/* CTA Button with hover scale + glow */}
             <motion.button
               whileHover={{
@@ -80,7 +83,7 @@ export default function Hero() {
               whileTap={{ scale: 0.97 }}
               className="bg-[var(--color-primary)] text-[var(--color-text)] px-7 py-4 text-[11px] font-bold tracking-[0.15em] uppercase flex items-center gap-6 transition-all duration-300"
             >
-              Get Free Assessment <ArrowRight size={14} />
+              Explore Process <ArrowRight size={14} />
             </motion.button>
 
             {/* Certifications */}

@@ -42,15 +42,15 @@ export default function Stats() {
   ];
 
   return (
-    <section className="border-y bg-[#0c1a10] border-white/10 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#1c6b36]/10 via-transparent to-transparent opacity-50"></div>
-      <div className="max-w-[90rem] mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10 relative z-10">
+    <section className="border-y bg-[var(--color-bg-alt)] border-[var(--color-border)] relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[var(--color-primary)]/10 via-transparent to-transparent opacity-50"></div>
+      <div className="max-w-[90rem] mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-[var(--color-border)] relative z-10">
         {stats.map((stat, idx) => (
           <div key={idx} className="py-20 flex flex-col items-center justify-center text-center group cursor-default">
-            <h3 className="text-4xl md:text-5xl font-serif mb-3 text-white group-hover:scale-110 transition-transform duration-500">
+            <h3 className="text-4xl md:text-5xl font-serif mb-3 text-[var(--color-text)] group-hover:scale-110 transition-transform duration-500">
               <Counter end={stat.end} suffix={stat.suffix} delay={idx * 150} duration={2500} />
             </h3>
-            <p className="text-[10px] text-[#c29a4b] font-bold tracking-[0.2em] uppercase">{stat.label}</p>
+            <p className="text-[10px] text-[var(--color-secondary)] font-bold tracking-[0.2em] uppercase">{stat.label}</p>
           </div>
         ))}
       </div>

@@ -4,20 +4,20 @@ import { BarChart, ShieldCheck, ChevronDown, Recycle, Zap } from 'lucide-react';
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="border-b border-white/10 py-6">
+    <div className="border-b border-[var(--color-border)] py-6">
       <button 
         onClick={() => setIsOpen(!isOpen)} 
         className="flex w-full justify-between items-center text-left focus:outline-none group"
       >
-        <span className="font-serif text-lg text-white group-hover:text-[#c29a4b] transition-colors">{question}</span>
-        <ChevronDown className={`text-gray-500 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#c29a4b]' : ''}`} />
+        <span className="font-serif text-lg text-[var(--color-text)] group-hover:text-[var(--color-secondary)] transition-colors">{question}</span>
+        <ChevronDown className={`text-[var(--color-muted)] transition-transform duration-300 ${isOpen ? 'rotate-180 text-[var(--color-secondary)]' : ''}`} />
       </button>
       <div 
         className={`overflow-hidden transition-all duration-500 ease-in-out ${
           isOpen ? 'max-h-60 opacity-100 mt-4' : 'max-h-0 opacity-0'
         }`}
       >
-        <p className="text-gray-400 font-light text-sm leading-relaxed">{answer}</p>
+        <p className="text-[var(--color-muted)] font-light text-sm leading-relaxed">{answer}</p>
       </div>
     </div>
   );
@@ -25,49 +25,49 @@ const FAQItem = ({ question, answer }) => {
 
 export default function FAQAndWhyUs() {
   return (
-    <div className="bg-[#050905]">
+    <div className="bg-[var(--color-bg-deep)]">
       {/* Section 1: Why Choose Us */}
       <section className="py-24 px-8 max-w-[90rem] mx-auto w-full">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="font-serif text-5xl text-white mb-6">Redefining Bio-Energy Infrastructure</h2>
-            <p className="text-gray-400 font-light leading-relaxed">
+            <h2 className="font-serif text-5xl text-[var(--color-text)] mb-6">Redefining Bio-Energy Infrastructure</h2>
+            <p className="text-[var(--color-muted)] font-light leading-relaxed">
               We don't just build plants; we engineer sustainable ecosystems. Our approach combines 
               cutting-edge molecular technology with decades of hands-on EPC experience.
             </p>
           </div>
-          <div className="h-px flex-grow bg-gradient-to-r from-[#c29a4b]/50 to-transparent hidden md:block mb-4 ml-10"></div>
+          <div className="h-px flex-grow bg-linear-to-r from-[var(--color-secondary)]/50 to-transparent hidden md:block mb-4 ml-10"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="border-l-2 border-[#c29a4b]/30 pl-6 py-4 hover:border-[#c29a4b] hover:bg-white/5 transition-all duration-300 group">
-            <BarChart className="text-[#1c6b36] mb-4 group-hover:scale-110 transition-transform" size={32}/>
-            <h4 className="text-xl text-white mb-3 font-serif">Proven Expertise</h4>
-            <p className="text-sm text-gray-400 font-light leading-relaxed">
+          <div className="border-l-2 border-[var(--color-secondary)]/30 pl-6 py-4 hover:border-[var(--color-secondary)] hover:bg-[var(--color-text)]/5 transition-all duration-300 group">
+            <BarChart className="text-[var(--color-primary)] mb-4 group-hover:scale-110 transition-transform" size={32}/>
+            <h4 className="text-xl text-[var(--color-text)] mb-3 font-serif">Proven Expertise</h4>
+            <p className="text-sm text-[var(--color-muted)] font-light leading-relaxed">
               Over 20 years of delivering large-scale green energy infrastructure with a 100% project success rate.
             </p>
           </div>
 
-          <div className="border-l-2 border-[#c29a4b]/30 pl-6 py-4 hover:border-[#c29a4b] hover:bg-white/5 transition-all duration-300 group">
-            <ShieldCheck className="text-[#1c6b36] mb-4 group-hover:scale-110 transition-transform" size={32}/>
-            <h4 className="text-xl text-white mb-3 font-serif">Global Standards</h4>
-            <p className="text-sm text-gray-400 font-light leading-relaxed">
+          <div className="border-l-2 border-[var(--color-secondary)]/30 pl-6 py-4 hover:border-[var(--color-secondary)] hover:bg-[var(--color-text)]/5 transition-all duration-300 group">
+            <ShieldCheck className="text-[var(--color-primary)] mb-4 group-hover:scale-110 transition-transform" size={32}/>
+            <h4 className="text-xl text-[var(--color-text)] mb-3 font-serif">Global Standards</h4>
+            <p className="text-sm text-[var(--color-muted)] font-light leading-relaxed">
               Fully compliant with international safety and environmental norms, including ASME and ISO benchmarks.
             </p>
           </div>
 
-          <div className="border-l-2 border-[#c29a4b]/30 pl-6 py-4 hover:border-[#c29a4b] hover:bg-white/5 transition-all duration-300 group">
-            <Zap className="text-[#1c6b36] mb-4 group-hover:scale-110 transition-transform" size={32}/>
-            <h4 className="text-xl text-white mb-3 font-serif">High Efficiency</h4>
-            <p className="text-sm text-gray-400 font-light leading-relaxed">
+          <div className="border-l-2 border-[var(--color-secondary)]/30 pl-6 py-4 hover:border-[var(--color-secondary)] hover:bg-[var(--color-text)]/5 transition-all duration-300 group">
+            <Zap className="text-[var(--color-primary)] mb-4 group-hover:scale-110 transition-transform" size={32}/>
+            <h4 className="text-xl text-[var(--color-text)] mb-3 font-serif">High Efficiency</h4>
+            <p className="text-sm text-[var(--color-muted)] font-light leading-relaxed">
               Our Multi-Pressure Distillation systems achieve the lowest steam consumption in the industry.
             </p>
           </div>
 
-          <div className="border-l-2 border-[#c29a4b]/30 pl-6 py-4 hover:border-[#c29a4b] hover:bg-white/5 transition-all duration-300 group">
-            <Recycle className="text-[#1c6b36] mb-4 group-hover:scale-110 transition-transform" size={32}/>
-            <h4 className="text-xl text-white mb-3 font-serif">Zero Discharge</h4>
-            <p className="text-sm text-gray-400 font-light leading-relaxed">
+          <div className="border-l-2 border-[var(--color-secondary)]/30 pl-6 py-4 hover:border-[var(--color-secondary)] hover:bg-[var(--color-text)]/5 transition-all duration-300 group">
+            <Recycle className="text-[var(--color-primary)] mb-4 group-hover:scale-110 transition-transform" size={32}/>
+            <h4 className="text-xl text-[var(--color-text)] mb-3 font-serif">Zero Discharge</h4>
+            <p className="text-sm text-[var(--color-muted)] font-light leading-relaxed">
               Innovative ZLD (Zero Liquid Discharge) solutions ensure your facility meets tomorrow's environmental laws today.
             </p>
           </div>
@@ -77,11 +77,11 @@ export default function FAQAndWhyUs() {
       {/* Section 2: FAQs */}
       <section className="py-24 px-8 max-w-[50rem] mx-auto w-full">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl text-white mb-4">Technical Insights</h2>
-          <p className="text-gray-500 text-sm tracking-widest uppercase">Everything you need to know</p>
+          <h2 className="font-serif text-4xl text-[var(--color-text)] mb-4">Technical Insights</h2>
+          <p className="text-[var(--color-muted)] text-sm tracking-widest uppercase">Everything you need to know</p>
         </div>
         
-        <div className="border-t border-white/10">
+        <div className="border-t border-[var(--color-border)]">
           <FAQItem 
             question="What feedstocks can be used?" 
             answer="Our plants are highly adaptable, processing starch-rich grains like broken rice and maize, as well as sugar-based options including sugarcane juice, B-heavy, and C-molasses. Switch-over technology allows seasonal flexibility." 

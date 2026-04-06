@@ -10,11 +10,11 @@ import Projects from '../Components/BioEthanol/Projects';
 import FAQAndWhyUs from '../Components/BioEthanol/FAQAndWhyUs';
 import CTASection from '../Components/Common/CTASection';
 import Header from '../Components/Common/Header';
-import { Footer } from '../Components/Common/Footer';
+import Footer from '../Components/Common/Footer';
 
 export default function BioEthanol() {
   return (
-    <div className="bg-[#050905] text-white font-sans min-h-screen selection:bg-[#1c6b36] selection:text-white">
+    <div className="bg-[var(--color-bg-deep)] text-[var(--color-text)] font-sans min-h-screen selection:bg-[var(--color-primary)] selection:text-[var(--color-text)]">
       <Header/>
       <Hero />
       <Stats />

@@ -1,14 +1,37 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react'; // Added lucide-react for the arrow icon
 
-export default function Process(){
-  const steps = [
-    { num: "01", title: "Feasibility & FEED", desc: "Front-end engineering design, layout conceptualization, and utility calculation for project viability.", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop" },
-    { num: "02", title: "Detailed Engineering", desc: "Process flow diagrams, P&IDs, equipment data sheets, and structural designs tailored to exact specs.", img: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=2070&auto=format&fit=crop" },
-    { num: "03", title: "Procurement & Fabrication", desc: "Vendor coordination, global sourcing of process equipment, structural elements, heat exchangers, and tanks.", img: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop" },
-    { num: "04", title: "Construction & Commissioning", desc: "Site mobilization, civil works, piping, electrical instrumentation, safe start-up, and performance guarantees.", img: "https://static.vecteezy.com/system/resources/thumbnails/050/680/200/small/industrial-machine-in-a-workshop-setting-operating-during-the-day-showcasing-precision-engineering-and-manufacturing-processes-photo.jpg" }
-  ];
-
+export default function Process() {
+ const steps = [
+  {
+    num: "01",
+    title: "Feasibility & Feedstock Analysis",
+    desc: "Evaluation of feedstock options, yield potential, and techno-commercial feasibility for bio-iso-butanol production.",
+    // Image of laboratory testing and chemical analysis
+    img: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    num: "02",
+    title: "Process Engineering",
+    desc: "Design of fermentation pathways, reaction kinetics, process flow diagrams, and integration of bio-reactors and separation systems.",
+    // Image of engineers working on process blueprints/schematics
+    img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    num: "03",
+    title: "Equipment & Integration",
+    desc: "Procurement and integration of fermenters, distillation columns, heat exchangers, and advanced control systems.",
+    // Image of complex industrial piping, valves, and equipment integration
+    img: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop"
+  },
+  {
+    num: "04",
+    title: "Commissioning & Optimization",
+    desc: "Plant start-up, performance testing, yield optimization, and ensuring stable, efficient iso-butanol production.",
+    // Image of a specialized worker/engineer conducting performance checks in a facility
+    img: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=2070&auto=format&fit=crop"
+  }
+];
   return (
     <section id="process" className="py-32 px-8 max-w-[90rem] mx-auto w-full border-y border-[var(--color-border)]">
       
@@ -22,11 +45,11 @@ export default function Process(){
         </div>
         
         <h3 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] font-normal tracking-tight text-[var(--color-text)] leading-[1.1] mb-6">
-          The Art of Turnkey <br/>
-          <span className="italic text-[var(--color-muted)]">Plant Delivery</span>
+          The Science Behind <br/>
+          <span className="italic text-[var(--color-muted)]">Iso-Butanol Production</span>
         </h3>
         <p className="text-[var(--color-muted)] text-sm md:text-base font-light leading-relaxed">
-          A rigorous 4-phase execution strategy ensuring every project is delivered on schedule, within budget, and to global performance guarantees.
+         A precision-driven execution strategy ensuring optimal yield, purity, and operational efficiency.
         </p>
       </div>
 

@@ -36,21 +36,21 @@ export default function Expertise() {
   ];
 
   return (
-    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[#050905] min-h-[90vh] flex flex-col justify-center">
+    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[var(--color-bg-deep)] min-h-[90vh] flex flex-col justify-center">
       
       {/* Header */}
       <div className="text-center mb-20 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-4 mb-6">
-          <div className="w-8 h-[1px] bg-[#c29a4b]"></div>
-          <span className="text-[#c29a4b] text-[10px] font-bold tracking-[0.2em] uppercase">
+          <div className="w-8 h-[1px] bg-[var(--color-secondary)]"></div>
+          <span className="text-[var(--color-secondary)] text-[10px] font-bold tracking-[0.2em] uppercase">
             Core Capabilities
           </span>
-          <div className="w-8 h-[1px] bg-[#c29a4b]"></div>
+          <div className="w-8 h-[1px] bg-[var(--color-secondary)]"></div>
         </div>
-        <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] text-white leading-tight mb-6">
+        <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] text-[var(--color-text)] leading-tight mb-6">
           Our Ethanol Capabilities
         </h2>
-        <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
+        <p className="text-[var(--color-muted)] text-sm md:text-base font-light leading-relaxed">
           We engineer highly adaptable, next-generation distilleries that maximize yield and minimize energy consumption across all major feedstock varieties.
         </p>
       </div>
@@ -60,27 +60,27 @@ export default function Expertise() {
         {expertise.map((item, i) => (
           <div 
             key={i} 
-            className="group relative bg-[#0c1a10] border border-white/5 overflow-hidden flex flex-col h-full min-h-[480px] hover:-translate-y-3 hover:border-[#c29a4b]/40 hover:shadow-2xl hover:shadow-[#c29a4b]/10 transition-all duration-700 cursor-pointer"
+            className="group relative bg-[var(--color-bg-alt)] border border-[var(--color-border)] overflow-hidden flex flex-col h-full min-h-[480px] hover:-translate-y-3 hover:border-[var(--color-secondary)]/40 hover:shadow-2xl hover:shadow-[var(--color-secondary)]/10 transition-all duration-700 cursor-pointer"
           >
             
             {/* Gradient Overlay to ensure text readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0c1a10] via-[#0c1a10]/90 to-[#0c1a10]/80"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-[var(--color-bg-alt)] via-[var(--color-bg-alt)]/90 to-[var(--color-bg-alt)]/80"></div>
 
             {/* Content Container */}
             <div className="relative z-10 p-10 flex flex-col h-full">
               
               {/* Icon */}
-              <div className="w-16 h-16 rounded-full bg-[#050905] border border-white/10 flex items-center justify-center mb-8 group-hover:border-[#c29a4b] group-hover:bg-[#c29a4b]/10 transition-colors duration-500">
-                <div className="text-[#c29a4b] group-hover:scale-110 transition-transform duration-500">
+              <div className="w-16 h-16 rounded-full bg-[var(--color-bg-deep)] border border-[var(--color-border)] flex items-center justify-center mb-8 group-hover:border-[var(--color-secondary)] group-hover:bg-[var(--color-secondary)]/10 transition-colors duration-500">
+                <div className="text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-500">
                   {item.icon}
                 </div>
               </div>
               
               {/* Text */}
-              <h3 className="font-serif text-2xl lg:text-3xl text-white mb-4 group-hover:text-[#c29a4b] transition-colors duration-300">
+              <h3 className="font-serif text-2xl lg:text-3xl text-[var(--color-text)] mb-4 group-hover:text-[var(--color-secondary)] transition-colors duration-300">
                 {item.title}
               </h3>
-              <p className="text-gray-400 text-sm font-light leading-relaxed mb-8 flex-grow">
+              <p className="text-[var(--color-muted)] text-sm font-light leading-relaxed mb-8 flex-grow">
                 {item.desc}
               </p>
 
@@ -88,8 +88,8 @@ export default function Expertise() {
               <ul className="space-y-4 mb-8">
                 {item.features.map((feature, fIdx) => (
                   <li key={fIdx} className="flex items-start gap-3">
-                    <CheckCircle2 className="text-[#1c6b36] mt-[2px] flex-shrink-0" size={16} />
-                    <span className="text-gray-300 text-xs font-light leading-relaxed group-hover:text-white transition-colors duration-300">
+                    <CheckCircle2 className="text-[var(--color-primary)] mt-[2px] flex-shrink-0" size={16} />
+                    <span className="text-[var(--color-text-muted)] text-xs font-light leading-relaxed group-hover:text-[var(--color-text)] transition-colors duration-300">
                       {feature}
                     </span>
                   </li>
@@ -97,13 +97,13 @@ export default function Expertise() {
               </ul>
 
               {/* Animated Footer/CTA */}
-              <div className="pt-6 border-t border-white/10 mt-auto flex items-center justify-between overflow-hidden">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-white group-hover:text-[#c29a4b] transition-colors">
+              <div className="pt-6 border-t border-[var(--color-border)] mt-auto flex items-center justify-between overflow-hidden">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-text)] group-hover:text-[var(--color-secondary)] transition-colors">
                   Explore Systems
                 </span>
                 <ArrowRight 
                   size={18} 
-                  className="text-[#c29a4b] opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out" 
+                  className="text-[var(--color-secondary)] opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out" 
                 />
               </div>
 

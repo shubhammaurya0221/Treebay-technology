@@ -26,24 +26,24 @@ export default function Solutions() {
   ];
 
   return (
-    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[#0c1a10] border-y border-white/5 min-h-[80vh] flex flex-col justify-center">
-      <h2 className="font-serif text-4xl md:text-5xl text-white mb-20 text-center">What We Offer</h2>
+    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[var(--color-bg-alt)] border-y border-[var(--color-border)] min-h-[80vh] flex flex-col justify-center">
+      <h2 className="font-serif text-4xl md:text-5xl text-[var(--color-text)] mb-20 text-center">What We Offer</h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, i) => (
-          <div key={i} className="p-10 border border-white/5 bg-[#050905] hover:border-[#1c6b36] transition-colors duration-500 group cursor-pointer relative overflow-hidden">
+          <div key={i} className="p-10 border border-[var(--color-border)] bg-[var(--color-bg-deep)] hover:border-[var(--color-primary)] transition-colors duration-500 group cursor-pointer relative overflow-hidden">
             {/* Background Decorative Element */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#1c6b36]/5 rounded-bl-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-primary)]/5 rounded-bl-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
             
             {/* Icon Wrapper */}
-            <div className="text-[#1c6b36] mb-8 group-hover:-rotate-12 group-hover:scale-110 transition-transform duration-300 origin-bottom-left relative z-10">
+            <div className="text-[var(--color-primary)] mb-8 group-hover:-rotate-12 group-hover:scale-110 transition-transform duration-300 origin-bottom-left relative z-10">
               {service.icon}
             </div>
             
             {/* Content */}
-            <h3 className="text-xl font-serif mb-4 text-white relative z-10">
+            <h3 className="text-xl font-serif mb-4 text-[var(--color-text)] relative z-10">
               {service.title}
             </h3>
-            <p className="text-sm text-gray-400 leading-relaxed relative z-10">
+            <p className="text-sm text-[var(--color-muted)] leading-relaxed relative z-10">
               {service.desc}
             </p>
           </div>

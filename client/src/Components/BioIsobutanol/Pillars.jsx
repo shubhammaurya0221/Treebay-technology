@@ -4,57 +4,62 @@ import { motion } from "framer-motion";
 
 export default function Pillars() {
   const pillars = [
-    {
-      title: "Ethanol Distilleries",
-      category: "GRAIN · SUGARCANE · MULTI-FEED",
-      badgeTitle: "500 KLPD",
-      badgeSub: "Max Capacity Delivered",
-      desc: "Complete EPC for grain-based and sugarcane-based ethanol plants from 30 KLPD to 500 KLPD.",
-      img: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2070&auto=format&fit=crop",
-      span: "lg:col-span-2",
-      height: "h-[400px] lg:h-[500px]",
-    },
-    {
-      title: "Bio-CNG Plants",
-      category: "BIOGAS · UPGRADATION · COMPRESSION",
-      badgeTitle: "5000 Nm³",
-      badgeSub: "Daily Capacity",
-      desc: "End-to-end Bio-CNG facility design — from feedstock handling to bottling infrastructure.",
-      img: "https://static.vecteezy.com/system/resources/thumbnails/068/744/462/small/worker-operating-machinery-in-a-bright-industrial-warehouse-at-sunset-showcasing-production-photo.jpg",
-      span: "lg:col-span-1",
-      height: "h-[400px] lg:h-[500px]",
-    },
-    {
-      title: "Green Chemical Plants",
-      category: "BIO-ETHYLENE · BIO-MEG · ACETIC ACID",
-      badgeTitle: "98%",
-      badgeSub: "Process Purity Achieved",
-      desc: "Next-generation green chemical facilities using bio-based feedstocks.",
-      img: "https://static.vecteezy.com/system/resources/thumbnails/050/681/798/small/welding-and-fabrication-in-a-bustling-industrial-factory-during-daytime-with-engineers-working-on-metal-structures-photo.jpg",
-      span: "lg:col-span-1",
-      height: "h-[360px]",
-    },
-    {
-      title: "Zero Liquid Discharge",
-      category: "WATER TREATMENT · EFFLUENT · RECYCLING",
-      badgeTitle: "100%",
-      badgeSub: "Water Recovery",
-      desc: "Advanced ZLD systems ensuring complete effluent recycling.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltmg6AH09yDgF85hW-stZb6HIvhJy_VOBz_cZoQbz8-j9WOtnDDQcD3A&s",
-      span: "lg:col-span-1",
-      height: "h-[360px]",
-    },
-    {
-      title: "Biomass Cogeneration",
-      category: "POWER · STEAM · SUSTAINABILITY",
-      badgeTitle: "15 MW",
-      badgeSub: "Power Output",
-      desc: "High-pressure boiler and turbine installations for power generation.",
-      img: "https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=2070&auto=format&fit=crop",
-      span: "lg:col-span-1",
-      height: "h-[360px]",
-    },
-  ];
+  {
+    title: "Feedstock Processing",
+    category: "BIOMASS · SUGARS · MULTI-FEED",
+    badgeTitle: "Flexible",
+    badgeSub: "Feedstock Handling",
+    desc: "Efficient preprocessing systems for biomass, agricultural residues, and sugar-based feedstocks for iso-butanol production.",
+    // Image of industrial bulk material processing / conveyors
+    img: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?q=80&w=2070&auto=format&fit=crop",
+    span: "lg:col-span-2",
+    height: "h-[400px] lg:h-[500px]",
+  },
+  {
+    title: "Fermentation Systems",
+    category: "MICROBIAL · ANAEROBIC · CONTROLLED",
+    badgeTitle: "High Yield",
+    badgeSub: "Optimized Conversion",
+    desc: "Advanced fermentation systems using engineered microorganisms for efficient iso-butanol production.",
+    // Image of large stainless steel fermentation tanks/bioreactors
+    img: "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?q=80&w=2070&auto=format&fit=crop",
+    span: "lg:col-span-1",
+    height: "h-[400px] lg:h-[500px]",
+  },
+  {
+    title: "Separation & Purification",
+    category: "DISTILLATION · DEHYDRATION · REFINING",
+    badgeTitle: "99%",
+    badgeSub: "Purity Achieved",
+    desc: "High-efficiency separation and purification technologies ensuring industrial-grade iso-butanol output.",
+    // Image of industrial distillation columns and refinery piping
+    img: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=2070&auto=format&fit=crop",
+    span: "lg:col-span-1",
+    height: "h-[360px]",
+  },
+  {
+    title: "Zero Liquid Discharge",
+    category: "EFFLUENT · RECYCLING · WATER MANAGEMENT",
+    badgeTitle: "100%",
+    badgeSub: "Water Recovery",
+    desc: "Sustainable ZLD systems ensuring complete recycling of process water and minimal environmental impact.",
+    // Image of industrial water treatment / filtration pipework
+    img: "https://images.unsplash.com/photo-1621619856624-42fd193a0661?q=80&w=2070&auto=format&fit=crop",
+    span: "lg:col-span-1",
+    height: "h-[360px]",
+  },
+  {
+    title: "Utility & Energy Integration",
+    category: "STEAM · POWER · HEAT RECOVERY",
+    badgeTitle: "Optimized",
+    badgeSub: "Energy Efficiency",
+    desc: "Integrated utility systems with heat recovery and energy optimization for cost-effective plant operations.",
+    // Image of industrial steam, energy turbines, or heavy utility infrastructure
+    img: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2066&auto=format&fit=crop",
+    span: "lg:col-span-1",
+    height: "h-[360px]",
+  },
+];
 
   return (
     <section className="py-24 px-8 max-w-[90rem] mx-auto w-full bg-[var(--color-bg)]">
@@ -76,14 +81,14 @@ export default function Pillars() {
           </div>
 
           <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] text-[var(--color-text)] leading-[1.1]">
-            Three Pillars of <br />
-            <span className="italic text-[var(--color-muted)]">Clean Energy</span> EPC
+            Core Capabilities in <br />
+            <span className="italic text-[var(--color-muted)]">Iso-Butanol</span> EPC
           </h2>
         </div>
 
         <div className="flex items-end">
           <p className="text-[var(--color-muted)] max-w-lg">
-            From sugarcane fields to bio-refineries, we engineer infrastructure that transforms feedstocks into clean fuels.
+            Delivering complete infrastructure for advanced biofuel production — from feedstock handling to final product purification.
           </p>
         </div>
       </motion.div>
