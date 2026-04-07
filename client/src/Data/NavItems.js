@@ -50,7 +50,7 @@ export const NavItems = [
         name: 'Bio Fuels',
         links: [
           { name: 'Bio Ethanol', path: '/bio-ethanol' },
-          { name: 'Bio ISO Butanol', path: '/bio-iso-butanol' },
+          { name: 'Bio Iso Butanol', path: '/bio-iso-butanol' },
           { name: 'Bio Methanol', path: '/bio-methanol' },
           { name: 'Bio Diesel | (FAME)', path: '/bio-diesel' },
           { name: 'Bio Methane', path: '/bio-methane' },
