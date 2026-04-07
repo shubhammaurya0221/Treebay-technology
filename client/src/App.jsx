@@ -5,6 +5,7 @@ import BioEthanol from './Pages/BioEthanol'
 import BioIsoButanol from './Pages/BioIsoButanol'
 import BioMethanol from './Pages/BioMethanol'
 import BioMethane from './Pages/BioMethane'
+import BioDiesel from './Pages/BioDiesel'
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
         <Route path='/bio-iso-butanol' element={<BioIsoButanol/>} />
         <Route path='/bio-methanol' element={<BioMethanol/>} />
         <Route path='/bio-methane' element={<BioMethane/>} />
+        <Route path='/bio-diesel' element={<BioDiesel/>} />
       </Routes>
     </BrowserRouter>
   )
