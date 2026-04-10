@@ -59,7 +59,7 @@ const Header = () => {
                     : 'bg-transparent border-b border-transparent'
                     }`}
             >
-                <div className="max-w-8xl mx-auto px-6 h-20 flex items-center justify-around">
+                <div className="max-w-8xl mx-auto px-6 h-20 flex items-center justify-between lg:justify-around">
 
                     {/* Left: Logo */}
                     <div className="flex items-center m-3 space-x-6 h-full z-50">
