@@ -18,9 +18,18 @@ const Header = () => {
 
     // 2. Add scroll event listener
     useEffect(() => {
+        let lastScrollY = window.scrollY;
+
         const handleScroll = () => {
-            // Set to true if scrolled down more than 50px
-            setIsScrolled(window.scrollY > 50);
+            const currentScrollY = window.scrollY;
+
+            setIsScrolled(currentScrollY > 50);
+
+            if (window.innerWidth >= 1024 && currentScrollY > lastScrollY) {
+                setActiveMenu(null);
+            }
+
+            lastScrollY = currentScrollY;
         };
 
         window.addEventListener('scroll', handleScroll);
