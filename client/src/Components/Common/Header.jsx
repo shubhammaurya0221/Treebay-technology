@@ -163,8 +163,11 @@ const Header = () => {
                         {/* Desktop Only Actions */}
                         <div className="hidden lg:flex items-center space-x-6 h-full">
                             {/* CHANGED to Link */}
-                            <Link to="/contact" className="text-[15px] font-medium text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">
-                                Contact us
+                             <Link
+                                to="/contact"
+                                className="block text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors w-full text-left font-semibold text-lg"
+                            >
+                                <button className='px-5 py-2 text-center rounded-xl font-sans text-white bg-[#2b8c44]'>Contact Us</button>
                             </Link>
                         </div>
 
@@ -276,7 +279,7 @@ const Header = () => {
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="block text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors w-full text-left font-semibold text-lg"
                             >
-                                Contact Us
+                                <button className='px-5 py-2 text-center rounded-xl font-sans text-white bg-[#2b8c44]'>Contact Us</button>
                             </Link>
                         </div>
                     </div>
