@@ -17,8 +17,8 @@ export default function Hero() {
         }}
       />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[var(--color-bg-deep)] via-[var(--color-bg-deep)]/10 to-transparent"></div>
+      {/* Gradient Overlay restricted to 50% width */}
+     <div className="absolute inset-y-0 left-0 z-0 w-1/2 bg-gradient-to-r from-[var(--color-bg-deep)]/90 via-[var(--color-bg-deep)]/60 to-transparent"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 mt-16">
 

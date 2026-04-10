@@ -4,7 +4,7 @@ import Home from './Pages/Home'
 import BioEthanol from './Pages/BioEthanol'
 import BioIsoButanol from './Pages/BioIsoButanol'
 import BioMethanol from './Pages/BioMethanol'
-import BioMethane from './Pages/BioMethane'
+import BioCBG from './Pages/BioCBG'
 import BioDiesel from './Pages/BioDiesel'
 import GreenHydrogen from './Pages/GreenHydrogen'
 import SAF from './Pages/SAF'
@@ -19,7 +19,7 @@ function App() {
         <Route path='/bio-ethanol' element={<BioEthanol/>} />
         <Route path='/bio-iso-butanol' element={<BioIsoButanol/>} />
         <Route path='/bio-methanol' element={<BioMethanol/>} />
-        <Route path='/bio-methane' element={<BioMethane/>} />
+        <Route path='/bio-CBG' element={<BioCBG/>} />
         <Route path='/bio-diesel' element={<BioDiesel/>} />
         <Route path='/green-hydrogen' element={<GreenHydrogen/>} />
         <Route path='/saf' element={<SAF/>} />

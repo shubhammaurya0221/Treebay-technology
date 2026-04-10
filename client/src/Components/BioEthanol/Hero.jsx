@@ -19,13 +19,14 @@ export default function Hero() {
         }}
       />
       
-      {/* Shadow Overlays */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[var(--color-bg-deep)] via-[var(--color-bg-deep)]/10 to-transparent"></div>
-      
+     {/* Gradient Overlay restricted to 50% width */}
+     <div className="absolute inset-y-0 left-0 z-0 w-1/2 bg-gradient-to-r from-[var(--color-bg-deep)]/90 via-[var(--color-bg-deep)]/60 to-transparent"></div>
+
       {/* Content */}
-      <div className="relative z-10 max-w-[90rem] mx-auto w-full">
+       <div className="relative z-10 max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 mt-16">
         
-        <motion.div 
+        <div>
+          <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -43,12 +44,14 @@ export default function Hero() {
         >
           Bio-Ethanol <br/> <span className="italic text-[var(--color-muted)]">Solutions.</span>
         </motion.h1>
+        </div>
         
-        <motion.p 
+       <div className="flex flex-col justify-end pb-4">
+         <motion.p 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-[var(--color-text-muted)] text-lg md:text-xl mb-10 max-w-2xl font-light leading-relaxed"
+          className="text-[var(--color-text)] text-balance md:text-[17px] mb-10 max-w-[28rem] leading-relaxed"
         >
           End-to-end EPC solutions for high-efficiency ethanol production. We engineer the future of clean fuel blending and industrial biofuels.
         </motion.p>
@@ -78,6 +81,7 @@ export default function Hero() {
             View Projects
           </motion.button>
         </motion.div>
+       </div>
       </div>
 
       {/* Scroll Indicator */}

@@ -17,8 +17,8 @@ export default function Hero() {
         }}
       />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[var(--color-bg-deep)] via-[var(--color-bg-deep)]/10 to-transparent"></div>
+      {/* Gradient Overlay restricted to 50% width */}
+     <div className="absolute inset-y-0 left-0 z-0 w-1/2 bg-gradient-to-r from-[var(--color-bg-deep)]/90 via-[var(--color-bg-deep)]/60 to-transparent"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 mt-16">
 
@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-[var(--color-text-muted)] text-base md:text-[17px] mb-10 max-w-[28rem] leading-relaxed"
+            className="text-[var(--color-text-muted)] text-balance md:text-[17px] mb-10 max-w-[28rem] leading-relaxed"
           >
             Turnkey EPC solutions for Ethanol Distilleries, Bio-CNG Plants, and Green Chemical Facilities — from process design to final commissioning.
           </motion.p>

@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Search, Globe, ChevronRight, ChevronDown, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom'; // 1. IMPORT LINK FROM REACT ROUTER
 import { NavItems } from '../../Data/NavItems.js';
-import logo from '../../assets/logo.png'
+import logoA from '../../assets/logoA.png'
+import logoB from '../../assets/logoB.png'
 const Header = () => {
     const [activeMenu, setActiveMenu] = useState(null);
     const [activeCategory, setActiveCategory] = useState(0);
@@ -45,8 +46,8 @@ const Header = () => {
             <header
                 ref={headerRef}
                 className={`fixed w-full top-0 z-50 text-white font-sans transition-all duration-300 ${isSolidBackground
-                        ? 'bg-[var(--color-bg-deep)] border-b border-[var(--color-border-muted)] shadow-lg'
-                        : 'bg-transparent border-b border-transparent'
+                    ? 'bg-[var(--color-bg-deep)] border-b border-[var(--color-border-muted)] shadow-lg'
+                    : 'bg-transparent border-b border-transparent'
                     }`}
             >
                 <div className="max-w-8xl mx-auto px-6 h-20 flex items-center justify-around">
@@ -55,12 +56,19 @@ const Header = () => {
                     <div className="flex items-center m-3 space-x-6 h-full z-50">
                         <Link to="/" className="flex items-center">
 
-                            <img
-                                src={logo}   // 👉 put your logo in public folder
-                                alt="Treebay Technology Logo"
-                                className="h-16 md:h-14 w-auto object-contain"
-                            />
+                            <div className="relative h-24 md:h-20 w-[180px] md:w-[220px]">
+                                <img
+                                    src={logoA}
+                                    alt="Logo A"
+                                    className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${isSolidBackground ? 'opacity-0' : 'opacity-100'}`}
+                                />
 
+                                <img
+                                    src={logoB}
+                                    alt="Logo B"
+                                    className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${isSolidBackground ? 'opacity-100' : 'opacity-0'}`}
+                                />
+                            </div>
                         </Link>
                     </div>
                     {/* Center: Desktop Navigation */}

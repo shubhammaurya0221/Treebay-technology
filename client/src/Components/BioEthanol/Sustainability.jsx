@@ -18,7 +18,7 @@ export default function Sustainability() {
   ];
 
   return (
-    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[var(--color-bg-deep)] min-h-[90vh] flex items-center overflow-hidden">
+    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[var(--color-bg)] min-h-[90vh] flex items-center overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center w-full">
         
         {/* Left Side: Enlarged Visual Element */}

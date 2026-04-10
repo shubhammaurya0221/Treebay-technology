@@ -59,7 +59,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-[var(--color-text-muted)] text-base md:text-[17px] mb-10 max-w-[28rem] leading-relaxed"
+            className="text-[var(--color-text)] text-balance md:text-[17px] mb-10 max-w-[28rem] leading-relaxed"
           >
             Transform natural oils and waste fats into high-performance renewable diesel with advanced processing and sustainable fuel technologies.
           </motion.p>

@@ -3,7 +3,7 @@ import { Fuel, Factory, Leaf, Zap } from 'lucide-react';
 
 export default function Overview() {
   return (
-    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[var(--color-bg-deep)] border-b border-[var(--color-border)] min-h-[80vh] flex items-center">
+    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[var(--color-bg)] border-b border-[var(--color-border)] min-h-[80vh] flex items-center">
       <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center w-full">
         
         {/* Left Content */}

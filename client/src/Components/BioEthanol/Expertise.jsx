@@ -36,7 +36,7 @@ export default function Expertise() {
   ];
 
   return (
-    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full bg-[var(--color-bg-deep)] min-h-[90vh] flex flex-col justify-center">
+    <section className="py-32 px-8 max-w-[90rem] mx-auto w-full min-h-[90vh] flex flex-col justify-center">
       
       {/* Header */}
       <div className="text-center mb-20 max-w-3xl mx-auto">
@@ -70,7 +70,7 @@ export default function Expertise() {
             <div className="relative z-10 p-10 flex flex-col h-full">
               
               {/* Icon */}
-              <div className="w-16 h-16 rounded-full bg-[var(--color-bg-deep)] border border-[var(--color-border)] flex items-center justify-center mb-8 group-hover:border-[var(--color-secondary)] group-hover:bg-[var(--color-secondary)]/10 transition-colors duration-500">
+              <div className="w-16 h-16 rounded-full bg-[var(--color-bg)] border border-[var(--color-border)] flex items-center justify-center mb-8 group-hover:border-[var(--color-secondary)] group-hover:bg-[var(--color-secondary)]/10 transition-colors duration-500">
                 <div className="text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-500">
                   {item.icon}
                 </div>

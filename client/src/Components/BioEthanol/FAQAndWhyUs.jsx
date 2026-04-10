@@ -25,7 +25,7 @@ const FAQItem = ({ question, answer }) => {
 
 export default function FAQAndWhyUs() {
   return (
-    <div className="bg-[var(--color-bg-deep)]">
+    <div className="bg-[var(--color-bg)]">
       {/* Section 1: Why Choose Us */}
       <section className="py-24 px-8 max-w-[90rem] mx-auto w-full">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">

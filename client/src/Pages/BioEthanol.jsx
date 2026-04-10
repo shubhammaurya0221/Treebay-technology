@@ -14,16 +14,20 @@ import Footer from '../Components/Common/Footer';
 
 export default function BioEthanol() {
   return (
-    <div className="bg-[var(--color-bg-deep)] text-[var(--color-text)] font-sans min-h-screen selection:bg-[var(--color-primary)] selection:text-[var(--color-text)]">
+    <div className="bg-[var(--color-bg)] text-[var(--color-text)] font-sans min-h-screen selection:bg-[var(--color-primary)] selection:text-[var(--color-text)]">
       <Header/>
       <Hero />
       <Stats />
       <Overview />
-      <Expertise />
+        <Expertise />
       <Process />
-      <Solutions />
+      <div className='bg-[var(--color-bg-alt)]'>
+        <Projects  />
+      </div>
       <Sustainability />
-      <Projects />
+      <div className='bg-[var(--color-bg-alt)]'>
+        <Projects  />
+      </div>
       <FAQAndWhyUs />
       <CTASection />
       <Footer/>
